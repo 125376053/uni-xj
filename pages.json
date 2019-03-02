@@ -1,0 +1,40 @@
+{
+    "pages" : [
+        {
+            "path" : "pages/index/index",
+            "style" : {
+                "navigationBarTitleText" : "首页"
+            }
+        },
+        {
+            "path" : "pages/login/login",
+            "style" : {}
+        },
+        {
+            "path" : "pages/yunxing/yunxing",
+            "style" : {}
+        },
+        {
+            "path" : "pages/jianShe/jianShe",
+            "style" : {}
+        },
+        {
+            "path" : "pages/message/message",
+            "style" : {}
+        },
+        {
+            "path" : "pages/selectSheshi/selectSheshi",
+            "style" : {}
+        },
+        {
+            "path" : "pages/my/my",
+            "style" : {}
+        }
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "uni-app",
+        "navigationBarBackgroundColor" : "#F8F8F8",
+        "backgroundColor" : "#F8F8F8"
+    }
+}

@@ -1,0 +1,1767 @@
+/*登录*/
+.loginBg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: url("http://waterh5.qijiatech.com/static/images/login_bg2.jpg") no-repeat;
+	background-size: cover;
+}
+
+.loginWrap {
+	width: 600rpx;
+	height: 650rpx;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -300rpx;
+	margin-top: -330rpx;
+}
+
+.login_title {
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+}
+
+.login_input {
+	margin-top: 97rpx;
+	margin-bottom: 60rpx;
+}
+
+.login_input>p {
+	height: 57rpx;
+	margin-top: 72rpx;
+}
+
+.login_input>p img {
+	width: 40rpx;
+	height: 49rpx;
+	float: left;
+}
+
+.login_input>p input {
+	width: 530rpx;
+	height: 42rpx;
+	float: left;
+	margin-left: 10rpx;
+	background: none;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.password {
+	position: relative;
+}
+
+.password i {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.biyan {
+	width: 45rpx;
+	height: 45rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/loginYan.png") no-repeat;
+	background-size: contain;
+	display: block;
+	position: absolute;
+	right: 20rpx;
+	top: 20rpx;
+}
+
+.zhengyan {
+	width: 45rpx;
+	height: 45rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/loginYan2.png") no-repeat;
+	background-size: contain;
+	display: block;
+}
+
+.resetPass {
+	font-size: 32rpx;
+	color: #fff;
+	float: right;
+	margin-bottom: 25rpx;
+	margin-top: 20rpx;
+}
+
+.loginBtn {
+	width: 100%;
+	height: 90rpx;
+	line-height: 90rpx;
+	background: #fff;
+	color: #2a6eca;
+	font-size: 32rpx;
+	display: block;
+	text-align: center;
+	clear: both;
+	border-radius: 10px;
+	font-size: 32rpx;
+	position: absolute;
+	bottom: 0;
+}
+
+/*找回密码*/
+.pageTitle {
+	width: 100%;
+	height: 89rpx;
+	line-height: 89rpx;
+	background: #2a6eca;
+	color: #fff;
+	font-size: 20rpx;
+	position: fixed;
+	z-index: 9999;
+}
+
+.pageTitle .leftJt {
+	position: absolute;
+	left: 0rpx;
+	height: 89rpx;
+	width: 100rpx;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+.pageTitle .leftJt img {
+	width: 25rpx;
+	height: 36rpx;
+	display: block;
+}
+
+.pageTitle .rightJt {
+	position: absolute;
+	right: 0rpx;
+	height: 89rpx;
+	width: 100rpx;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	top: 0;
+}
+
+.pageTitle .rightJt img {
+	width: 25rpx;
+	height: 36rpx;
+	display: block;
+}
+
+.pageTitle .titleName {
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 32rpx;
+}
+
+
+.repassContent {
+	width: 690rpx;
+	height: 450rpx;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -345rpx;
+	margin-top: -225rpx;
+}
+
+.repassContent .tel {
+	width: 690rpx;
+	height: 91rpx;
+	border: 1px solid #dedede;
+	border-radius: 5px;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	margin-bottom: 20rpx;
+	position: relative;
+}
+
+.repassContent .tel input {
+	width: 670rpx;
+	height: 87rpx;
+	padding-left: 20rpx;
+}
+
+
+.repassContent .yanzm {
+	width: 690rpx;
+	height: 91rpx;
+	position: relative;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: Justify;
+}
+
+.repassContent .yanzm input {
+	width: 380rpx;
+	height: 87rpx;
+	border: 1px solid #dedede;
+	border-radius: 5px;
+	padding: 0 0 0 20rpx;
+}
+
+.repassContent .yanzm .getYan {
+	width: 270rpx;
+	height: 87rpx;
+	background: #2a6eca;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 60rpx;
+	border-radius: 5px;
+	font-size: 20rpx;
+	padding: 0;
+	margin: 0;
+}
+
+.resetPassBtn {
+	margin-top: 252rpx;
+	width: 100%;
+	height: 90rpx;
+	line-height: 90rpx;
+	background: #2a6eca;
+	color: #fff;
+	font-size: 32rpx;
+	display: block;
+	text-align: center;
+	clear: both;
+	border-radius: 10px;
+}
+
+.resetPassBtnNo {
+	background: #ccc;
+}
+
+/*首页*/
+.indexWrap {
+	position: absolute;
+	top: 89rpx;
+	bottom: 106rpx;
+	left: 0;
+	right: 0;
+	background: #f0f2f5;
+	padding: 0 30rpx 0 26rpx;
+	overflow: auto;
+}
+
+.index_top {
+	width: 700rpx;
+	margin: 45rpx 0;
+	overflow: hidden;
+}
+
+.index_top p {
+	width: 344rpx;
+	height: 165rpx;
+	float: left;
+	margin-left: 4rpx;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+.index_top p:nth-child(1) {
+	background: url("http://waterh5.qijiatech.com/static/images/weihubg1.png") no-repeat;
+	background-size: contain;
+}
+
+.index_top p:nth-child(2) {
+	background: url("http://waterh5.qijiatech.com/static/images/weihubg2.png") no-repeat;
+	background-size: contain;
+}
+
+.index_top p:nth-child(3) {
+	background: url("http://waterh5.qijiatech.com/static/images/weihubg3.png") no-repeat;
+	background-size: contain;
+}
+
+.index_top p:nth-child(4) {
+	background: url("http://waterh5.qijiatech.com/static/images/weihubg4.png") no-repeat;
+	background-size: contain;
+}
+
+.index_top p img {
+	width: 72rpx;
+	height: 72rpx;
+	display: block;
+}
+
+.index_top p span {
+	color: #fff;
+	display: block;
+	font-size: 32rpx;
+}
+
+.jianshe {
+	overflow: hidden;
+	margin-bottom: 20rpx;
+}
+
+.jianshe_top {
+	height: 70rpx;
+	line-height: 70rpx;
+	padding-left: 10rpx;
+}
+
+.shuIcon {
+	float: left;
+	height: 32rpx;
+	width: 10rpx;
+	background: #2a6eca;
+	margin-top: 18rpx;
+}
+
+.jianshe_top b {
+	margin-left: 15rpx;
+	font-weight: normal;
+	font-size: 28rpx;
+}
+
+.JustifyFlex {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: Justify;
+}
+
+.centerFlex {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+.jianshe_bottom p {
+	width: 335rpx;
+	height: 130rpx;
+	background: #3eaeff;
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+}
+
+.jianshe_bottom p span {
+	display: block;
+	font-size: 50rpx;
+	font-family: '微软雅黑';
+	margin-top: 15rpx;
+}
+
+.jianshe_bottom p i {
+	display: block;
+	font-size: 28rpx;
+	font-family: '微软雅黑';
+}
+
+
+.yunZhuan {
+	width: 100%;
+	height: 290rpx;
+	background: #3eabff;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.yunxingLink {
+	height: 290rpx;
+	color: #fff;
+}
+
+.yunZhuan .p1 {
+	width: 190rpx;
+	text-align: center;
+}
+
+.yunZhuan .p1 .number {
+	font-size: 50rpx;
+}
+
+.yunZhuan .p1 .text {
+	font-size: 28rpx;
+}
+
+.yunZhuan .yunzhuanlv {
+	position: relative;
+	width: 230rpx;
+	height: 240rpx;
+}
+
+#tijiaoProcess1 {
+	width: 100%;
+}
+
+.huanText {
+	position: absolute;
+	font-size: 28rpx;
+	color: #fff;
+	top: 54%;
+	width: 100%;
+	text-align: center;
+}
+
+.orderFooter {
+	height: 140rpx;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid #ccc;
+	width: 100%;
+	background: #fff;
+	z-index: 99;
+}
+
+.orderFooter img {
+	width: 53rpx;
+	height: 53rpx;
+}
+
+.orderFooter ul {
+	display: -webkit-box;
+	height: 98rpx;
+	margin-top: 20rpx;
+}
+
+.orderFooter ul li {
+	width: 25%;
+	height: 106rpx;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	position: relative;
+}
+
+.orderFooter li p {
+	height: 75rpx;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.orderFooter li p img {
+	display: inline-block;
+}
+
+.orderFooter li p span {
+	display: block;
+	font-size: 24rpx;
+	color: #333;
+}
+
+.orderFooter li p.currentStyle span {
+	color: #2a6eca;
+}
+
+.jiansheNomargin {
+	margin-bottom: 50rpx;
+}
+
+.xiaoxiListWrap {
+	position: relative;
+}
+
+.xiaoxiList {
+	width: 40rpx;
+	position: absolute;
+	padding: 0rpx;
+	background: red;
+	border-radius: 20rpx;
+	text-align: center;
+	font-size: 20rpx;
+	color: #fff;
+	top: 10rpx;
+	right: 35rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+}
+
+.xiaoxiList1 {
+	width: 40rpx;
+	position: absolute;
+	padding: 0rpx;
+	background: red;
+	border-radius: 20rpx;
+	text-align: center;
+	color: #fff;
+	font-size: 20rpx;
+	top: 30rpx;
+	right: 40rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+}
+
+.yh_list {
+	overflow: hidden;
+	font-size: 32rpx;
+	background: #f0f2f5;
+}
+
+.yh_list li {
+	height: 160rpx;
+	margin-bottom: 10rpx;
+	padding: 0 25rpx;
+	background: #fff;
+	position: relative;
+	border-bottom: 1px solid #f0f2f5;
+}
+
+.yh_list li .left {
+	width: 75rpx;
+	border-right: 1px solid #ddd;
+}
+
+.yh_list li .left img {
+	width: 54rpx;
+	height: 64rpx;
+}
+
+.yh_list li .right {
+	width: 595rpx;
+}
+
+.yh_list li .right .title {
+	width: 595rpx;
+	color: #000;
+	margin-bottom: 20rpx;
+}
+
+.dataAndText span,
+dataAndText i {
+	display: block;
+	color: #999;
+	font-size: 22rpx;
+}
+
+.ellipse {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*实时监测*/
+.jianceWrap {
+	height: 148rpx;
+	background: #f0f2f5;
+	padding: 0 28rpx;
+}
+
+.jianceSearch {
+	height: 80rpx;
+	background: #e8e8e8;
+	border: 1px solid #c2c2c2;
+	border-radius: 40rpx;
+	font-size: 38rpx;
+	margin: 0 auto;
+	width: 91%;
+	padding: 0 3%;
+}
+
+.jianceSearch input {
+	background: none;
+	width: 500rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+}
+
+.jianceSearch input::-webkit-input-placeholder {
+	color: #787878;
+	opacity: .7;
+}
+
+.jianceSearch span {
+	display: block;
+}
+
+.searchIcon {
+	width: 46rpx;
+	height: 46rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/search.jpg") no-repeat;
+	background-size: contain;
+}
+
+.close {
+	width: 51rpx;
+	height:51rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/close.jpg") no-repeat;
+	background-size: contain;
+}
+
+.jianceList {
+	overflow: hidden;
+	background: #f0f2f5;
+}
+
+.jianceList li {
+	background: #fff;
+	margin-bottom: 10rpx;
+	position: relative;
+	border-bottom: 4px solid #f0f2f5;
+}
+
+.jianceList li a {
+	display: block;
+	color: #000;
+}
+
+.jianceList li .top {
+	border-bottom: 1px solid #dedede;
+	padding: 20rpx;
+}
+
+.jianceList li .top .title {
+	height: 110rpx;
+	line-height: 110rpx;
+	font-size: 40rpx;
+}
+
+.jianceList li .top .title span {
+	font-size: 28rpx;
+	color: #999;
+}
+
+.list-text>p {
+	min-width: 180rpx;
+	text-align: center;
+}
+
+.list-text>p b {
+	font-size: 40rpx;
+	color: #000;
+	display: block;
+}
+
+.list-text>p i {
+	font-size: 23rpx;
+	color: #999;
+	display: block;
+}
+
+.jianceList li .bottom {
+	height: 67rpx;
+	color: #999;
+	padding: 0 20rpx;
+}
+
+.shouceng {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 82rpx;
+	height: 96rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/shouceng.jpg") no-repeat;
+	background-size: contain;
+}
+
+/*历史记录*/
+.lishijilu {
+	margin-top: 10rpx;
+	background: #f0f2f5;
+	overflow: hidden;
+	font-size: 28rpx;
+	color: #333;
+}
+
+.lishijilu>p {
+	height: 66rpx;
+	line-height: 66rpx;
+	background: #fff;
+	padding: 0 20rpx;
+	color: #ccc;
+}
+
+.jilu-list {
+	background: #fff;
+}
+
+.jilu-list li {
+	height: 86rpx;
+	line-height: 86rpx;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0 20rpx;
+}
+
+.qingkong {
+	width: 297rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	border: 1px solid #999;
+	margin-bottom: 20rpx;
+	border-radius: 45rpx;
+	color: #999;
+	margin: 32rpx auto;
+	display: block;
+	background: #e8e8e8;
+}
+
+
+/*运行清空*/
+.yunxing {
+	padding: 30rpx;
+	background: #f0f2f5;
+	font-size: 32rpx;
+}
+
+.tableUl {
+	width: 100%;
+	margin-top: .44rpx;
+	background: #fff;
+	color: #333;
+	padding-bottom: 30rpx;
+}
+
+.tableUl li {
+	height: 86rpx;
+	text-align: center;
+	line-height: 86rpx;
+	border-bottom: 1px solid #ccc;
+}
+
+.tableUl li:first-child {
+	background: #e8e8e8;
+	color: #595757;
+	border-bottom: none;
+}
+
+.tableUl li:first-child span {
+	border-right: 2px solid #fff;
+	box-sizing: border-box;
+}
+
+.tableUl li:last-child {
+	border-bottom: none;
+}
+
+.tableUl li span {
+	float: left;
+	width: 50%;
+}
+
+.tableUl li span:nth-child(1) {
+	text-align: left;
+	text-indent: 2em;
+}
+
+/*建设情况*/
+.tableUl2 {
+	width: 100%;
+	margin-top: 44rpx;
+	background: #fff;
+	color: #333;
+	padding-bottom: 30rpx;
+}
+
+.tableUl2 li {
+	height: .86rpx;
+	text-align: center;
+	line-height: 86rpx;
+	border-bottom: 1px solid #ccc;
+}
+
+.tableUl2 li:first-child {
+	background: #e8e8e8;
+	color: #595757;
+	border-bottom: none;
+}
+
+.tableUl2 li:first-child span {
+	border-right: 2px solid #fff;
+	box-sizing: border-box;
+}
+
+.tableUl2 li:first-child span:last-child {
+	border: none;
+}
+
+.tableUl2 li:last-child {
+	border-bottom: none;
+}
+
+.tableUl2 li span {
+	float: left;
+	width: 33%;
+}
+
+.tableUl2 li span:nth-child(1) {
+	text-align: left;
+	text-indent: 1em;
+}
+
+/*报警详情*/
+.tab {
+	height: 140rpx;
+	background: #f0f2f5;
+}
+
+.tab li {
+	height: 78rpx;
+	line-height: 78rpx;
+	background: #fff;
+	text-align: center;
+	width: 150rpx;
+	font-size: 28rpx;
+	color: #999;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-right: 0;
+}
+
+.tab li.curLi {
+	background: #2a6eca;
+	color: #fff !important;
+}
+
+.tab li:first-child {
+	border-radius: 10px 0px 0px 10px;
+}
+
+.tab li:last-child {
+	border-radius: 0px 10px 10px 0px;
+	border-right: 1px solid #ccc;
+}
+
+.overAuto {
+	position: absolute;
+	top: 89rpx;
+	bottom: 120rpx;
+	overflow: auto;
+	width: 100%;
+}
+
+.overAuto2 {
+	position: absolute;
+	top: 89rpx;
+	bottom: 0;
+	overflow: auto;
+	width: 100%;
+}
+
+.overAuto3 {
+	position: absolute;
+	top: 200rpx;
+	bottom: 0;
+	overflow: auto;
+	width: 100%;
+}
+
+.tabContent {
+	background: #fff;
+}
+
+.footerQu {
+	height: 200rpx;
+	background: #f0f2f5;
+}
+
+.button {
+	display: block;
+	height: 90rpx;
+	line-height: 90rpx;
+	color: #fff;
+	background: #2a6eca;
+	font-size: 32rpx;
+	text-align: center;
+	width: 94%;
+}
+
+
+
+/*处置记录*/
+.chuzhiJilu {
+	margin: 20rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/xiaoyuan.gif") no-repeat;
+	background-size: 20rpx 20rpx;
+}
+
+.chuzhiJilu ul {
+	padding-top: 50rpx;
+	padding-bottom: 200rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/xiaoyuan.gif") repeat-y .07rpx .18rpx;
+	background-size: 5rpx;
+}
+
+.chuzhiJilu ul li {
+	padding-left: 40rpx;
+	font-size: 36rpx;
+	padding-top: 10rpx;
+	position: relative;
+	line-height: 60rpx;
+}
+
+.chuzhiJilu ul li span {
+	color: #999;
+	font-size: 32rpx;
+}
+
+.chuzhiJilu ul li span:nth-child(2) {
+	margin: 0 10rpx;
+}
+
+.chuzhiJilu ul li b {
+	font-size: 32rpx;
+}
+
+.chuzhiJilu ul li img {
+	position: absolute;
+	left: -.08rpx;
+	top: 18rpx;
+	width: 34rpx;
+	height: 45rpx;
+}
+
+.returnFixed {
+	position: fixed;
+	right: 42rpx;
+	bottom: 1rpx;
+	width: 60rpx;
+	height: 60rpx;
+	z-index: 99999;
+	background: #f0f2f5;
+}
+
+.returnFixed img {
+	width: 100%;
+}
+
+/*巡查管理*/
+.xunchaList li {
+	padding: 0;
+	height: auto !important;
+}
+
+.xunchaList li .top {
+	height: auto !important;
+	padding: 20rpx;
+}
+
+.xunchaList li .top .title {
+	width: 90%;
+	font-size: 33rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+}
+
+.flexStart {
+	display: -webkit-box;
+	-webkit-box-align: start;
+	-webkit-box-pack: start;
+}
+
+
+.xunchaCenter {
+	/*height: .3rpx; line-height: .3rpx;*/
+	margin-top: 20rpx;
+	font-size: 28rpx;
+	overflow: hidden;
+}
+
+.xunchaCenter span {
+	float: left;
+	color: #999;
+}
+
+.xunchaCenter span:nth-child(1) {
+	/*width:1.13rpx;*/
+	font-size: 28rpx;
+}
+
+.xunchaCenter span:nth-child(2) {
+	font-size: 28rpx;
+	/*margin-top: 1px;*/
+	margin: 0 10rpx;
+}
+
+.xunchaCenter span:nth-child(3) {
+	width: 300rpx;
+	font-size: 28rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+
+
+.xunchaList .bottom {
+	padding: 0 20rpx;
+	font-size: 28rpx;
+}
+
+.jinji {
+	position: absolute;
+	width: 140rpx;
+	height: 55rpx;
+	line-height: 55rpx;
+	text-align: center;
+	right: 60rpx;
+	top: 70rpx;
+	font-size: 22rpx;
+	z-index: 999;
+}
+
+.jinji1 {
+	border: 1px solid green;
+	color: green;
+	box-sizing: border-box;
+}
+
+.jinji2 {
+	border: 1px solid #2a6eca;
+	color: #2a6eca;
+}
+
+.jinji3 {
+	border: 1px solid #e98b2f;
+	color: #e98b2f;
+}
+
+.jinji4 {
+	border: 1px solid #ff9c9a;
+	color: #ff9c9a;
+}
+
+.chuliIcon {
+	position: absolute;
+	width: 112rpx;
+	height: 112rpx;
+	right: 0;
+	top: 0;
+}
+
+.chuliIcon img {
+	max-width: 100%;
+	text-align: right;
+}
+
+
+
+
+/*图片放大*/
+.imgBigList {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 99999;
+}
+
+#prevBtn {
+	width: 60rpx;
+	height: 60rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/leftBtn.png") no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 20rpx;
+	top: 50%;
+	margin-top: -.3rpx;
+}
+
+#nextBtn {
+	width: 60rpx;
+	height: 60rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/rightBtn.png") no-repeat;
+	background-size: contain;
+	position: absolute;
+	right: 20rpx;
+	top: 50%;
+	margin-top: -30rpx;
+}
+
+.closeBtn {
+	width: 100rpx;
+	height: 100rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/closeBtn.png") no-repeat;
+	background-size: contain;
+	position: absolute;
+	bottom: 100rpx;
+	left: 50%;
+	margin-left: -.5rpx;
+}
+
+/*消息管理*/
+.xiaoxiGuanli li .right .title {
+	width: 100%;
+	font-size: 33rpx;
+}
+
+.quan {
+	position: absolute;
+	width: 94rpx;
+	height: 78rpx;
+	right: 20rpx;
+	top: 0;
+}
+
+.quan img {
+	width: 94rpx;
+	height: 78rpx;
+}
+
+.xiaoxiGuanli li .jinji {
+	top: 25rpx;
+}
+
+/*工单处置*/
+.save {
+	height: 364rpx;
+	width: 585rpx;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -182rpx;
+	left: 50%;
+	margin-left: -292rpx;
+}
+
+.save h1 {
+	height: 100rpx;
+	line-height: 100rpx;
+	background: #f0f0f0;
+	font-size: 32rpx;
+	text-align: center;
+	font-weight: normal;
+	border-bottom: 1px solid #ccc;
+}
+
+.save .content {
+	padding: 0 40rpx;
+}
+
+.save .content p {
+	text-align: center;
+	height: 160rpx;
+	line-height: 160rpx;
+}
+
+.save .content .right {
+	float: right;
+}
+
+.save .content button {
+	padding: 0 25rpx;
+	background: none;
+	color: #333;
+}
+
+.save .content a {
+	color: #2a6eca;
+	padding: 0 25rpx;
+}
+
+.noIMG {
+	width: 100%;
+	text-align: center;
+	padding: 100rpx 0;
+	background: #fff;
+}
+
+.noIMG img {
+	width: 250rpx;
+	height: 235rpx;
+}
+
+/****************************************************************/
+
+/*工单详情*/
+.gd1 {
+	width: 6.74rpx;
+	margin: 0.2rpx 0.3rpx;
+	font-size: 0.26rpx;
+}
+
+.gd1 p {
+	line-height: 0.6rpx;
+	overflow: hidden;
+}
+
+.gd1 .xiaoLine {
+	line-height: .5rpx;
+}
+
+.gd1 p strong {
+	float: left;
+	width: 1.2rpx;
+	text-align: right;
+	font-weight: normal;
+	color: #333;
+}
+
+.gd1 p span {
+	float: left;
+	width: 5.2rpx;
+	margin-left: 0.32rpx;
+	color: #adadad;
+}
+
+.gd1 p .text {
+	color: #ffa46e;
+}
+
+.dt {
+	padding-bottom: .5rpx;
+	overflow: hidden;
+}
+
+.dt img {
+	width: 5.4rpx;
+	height: 3.3rpx;
+	margin-left: 1.8rpx;
+}
+
+/*现场图片*/
+.xc {
+	width: 6.9rpx;
+	margin: 0 0.3rpx;
+}
+
+.xc p {
+	height: 0.8rpx;
+	line-height: 0.8rpx;
+	font-size: 0.3rpx;
+	color: #333;
+}
+
+.xc .xc_tp {
+	overflow: hidden;
+}
+
+.xc .xc_tp img {
+	width: 1.52rpx;
+	height: 1.52rpx;
+	margin-right: 0.2rpx;
+}
+
+.xc .xc_tp .last {
+	margin-right: 0rpx;
+}
+
+.xc .num {
+	text-align: right;
+	padding-right: 0.36rpx;
+}
+
+/*现场照片*/
+.xc_zp {
+	width: 2.4rpx;
+	height: 2.3rpx;
+	margin: 2.1rpx auto;
+}
+
+/*工单处理*/
+.gd2 {
+	margin: 0.2rpx;
+	font-size: 0.26rpx;
+	padding-bottom: .5rpx;
+}
+
+.gd2 p {
+	height: 0.6rpx;
+	line-height: 0.6rpx;
+	overflow: hidden;
+}
+
+.gd2 p strong {
+	float: left;
+	width: 1.2rpx;
+	text-align: right;
+	font-weight: normal;
+	color: #333;
+}
+
+.gd2 p span {
+	float: left;
+	width: 5.2rpx;
+	margin-left: 0.32rpx;
+	color: #adadad;
+}
+
+.gd2 p .last {
+	border-bottom: 1px solid #dedede;
+}
+
+.gd2 .tp {
+	margin-top: 0.5rpx;
+	overflow: hidden;
+}
+
+.gd2 .tp li {
+	float: left;
+	width: 1.54rpx;
+	height: 1.52rpx;
+	margin-left: 0.2rpx;
+	margin-bottom: 0.2rpx;
+	position: relative;
+}
+
+.gd2 .tp img {
+	width: 1.54rpx;
+	height: 1.52rpx;
+}
+
+.file {
+	opacity: 0;
+	width: 1.54rpx;
+	height: 1.52rpx;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*日常巡查*/
+.rc {
+	overflow: hidden;
+}
+
+.rc ul {
+	width: 100%;
+	color: #333;
+	font-size: 28rpx;
+	/*background: #fff;*/
+}
+
+.rc ul li {
+	height: 80rpx;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 0 20rpx;
+	background: #fff;
+}
+
+.rc ul li span,
+.rc ul li img {
+	display: block;
+}
+
+.rc ul li .wt {
+	width: 590rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+}
+
+.rc ul li img {
+	width: 32rpx;
+	height: 34rpx;
+}
+
+/*.rc ul li:last-child{ border:none;}*/
+
+/*版本*/
+.version {
+	text-align: center;
+	padding: 64rpx 0;
+}
+
+.version p {
+	font-size: 22rpx;
+	color: #333;
+}
+
+.version img {
+	width: 130rpx;
+	height: 130rpx;
+}
+
+.save2 {
+	width: 580rpx;
+	height: 360rpx;
+	margin-left: -290rpx;
+	margin-top: -180rpx;
+}
+
+.save2 p {
+	text-align: center;
+	margin: 100rpx 0;
+	font-size: 35rpx;
+}
+
+.save2 .btnGroup {
+	width: 300rpx;
+	margin-left: 200rpx;
+}
+
+.save2 .btnGroup a {
+	display: block;
+	height: 70rpx;
+	line-height: 70rpx;
+	padding: 0 35rpx;
+	color: #333;
+}
+
+.save2 .btnGroup a:last-child {
+	background: #2a6eca;
+	color: #fff;
+}
+
+/*功能介绍*/
+.gnContent {
+	margin: 0 3%;
+}
+
+.gnContent .shuIcon {
+	width: 5rpx;
+}
+
+.gongnengWrap {
+	margin-top: 50rpx;
+}
+
+.gongneng {
+	width: 100%;
+	height: 400rpx;
+	background: #fff;
+}
+
+.gongneng img {
+	display: block;
+	width: 436rpx;
+	height: 314rpx;
+}
+
+/*工单管理*/
+.gongDanImg {
+	top: 10rpx;
+	text-align: center;
+}
+
+.gongDanImg img {
+	width: 79rpx;
+	height: 102rpx;
+}
+
+/*我的*/
+.bigImg {
+	width: 100%;
+	height: 420rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/myBg.jpg") no-repeat;
+	background-size: contain;
+}
+
+.myTou {
+	height: 157rpx;
+}
+
+.myTou .left {
+	margin-right: 20rpx;
+}
+
+.myTou .left img {
+	width: 156rpx;
+	height: 156rpx;
+}
+
+.myTou .right p {
+	margin-bottom: 20rpx;
+	color: #fff;
+}
+
+.myTou .right .title {
+	font-size: 40rpx;
+	font-weight: bold;
+}
+
+
+/*巡查问题上报*/
+.sb {
+	padding: 26rpx 26rpx;
+	background: #fff;
+}
+
+.sb .sb_xc {
+	height: 60rpx;
+	line-height: 60rpx;
+	color: #333;
+	font-size: 30rpx;
+	overflow: hidden;
+}
+
+.sb .sb_xc .sf {
+	float: left;
+	width: 130rpx;
+	height: 60rpx;
+}
+
+.sb .sb_xc .xz {
+	float: left;
+	width: 540rpx;
+	margin-left: 20rpx;
+	height: 60rpx;
+}
+
+.yes {
+	float: left;
+	width: 80rpx;
+	margin-right: 60rpx;
+}
+
+.yes span,
+.yes b {
+	display: block;
+}
+
+.radio1 {
+	width: 33rpx;
+	height: 33rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/radio1.jpg") no-repeat;
+	background-size: contain;
+}
+
+.radio2 {
+	width: 33rpx;
+	height: 33rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/radio2.jpg") no-repeat;
+	background-size: contain;
+}
+
+.radio_1 {
+	display: inline-block;
+	width: 50rpx;
+	height: 49rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/radio_1.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+.radio_2 {
+	display: inline-block;
+	width: 50rpx;
+	height: 50rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/radio_2.png") no-repeat;
+	background-size: contain;
+}
+
+
+.sb .sb_wz {
+	width: 680rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	color: #333;
+	font-size: 30rpx;
+	overflow: hidden;
+}
+
+.sb .sb_wz .sf {
+	float: left;
+	width: 130rpx;
+	height: 60rpx;
+}
+
+.sb .sb_wz p {
+	float: left;
+	width: 480rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	border-bottom: 1px solid #dedede;
+	margin-left: 20rpx;
+}
+
+.sb .sb_wz input {
+	float: left;
+	width: 480rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+}
+
+.sb .sb_wz .jt {
+	float: left;
+	width: 39rpx;
+	height: 60rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/down.jpg") no-repeat 0 20rpx;
+	background-size: contain;
+}
+
+.sb .d img {
+	width: 680rpx;
+	height: 330rpx;
+}
+
+.sb input::-webkit-input-placeholder {
+	color: #ccc;
+	opacity: .7;
+}
+
+.sb .sb_wz .jtr {
+	float: right;
+	width: 39rpx;
+	height: 60rpx;
+	background: url("http://waterh5.qijiatech.com/static/images/down.jpg") no-repeat 0 20rpx;
+	background-size: contain;
+}
+
+.xialaCeng {
+	width: 480rpx;
+	padding: 30rpx;
+	box-shadow: 0 0 5px #000;
+	background: #fff;
+	position: absolute;
+	display: none;
+}
+
+.xialaCeng li {
+	height: 84rpx;
+	line-height: 84rpx;
+}
+
+.bottom10 {
+	bottom: 190rpx;
+	position: fixed;
+	width: 100%;
+}
+
+.bottom20 {
+	bottom: 40rpx;
+	position: fixed;
+	width: 100%;
+}
+
+.bottom20 button {
+	background: #f0f2f5;
+	color: #2a6eca;
+	border: 1px solid #2a6eca;
+}
+
+/*意见反馈*/
+.yj {
+	width: 680rpx;
+	margin: 30rpx 35rpx;
+}
+
+.yj .yj1 p {
+	width: 680rpx;
+	height: 69rpx;
+	line-height: 69rpx;
+	font-size: 28rpx;
+	color: #333;
+}
+
+.yj .yj1 .nr {
+	width: 680rpx;
+	border: 1px solid #d9dbde;
+	box-sizing: border-box;
+}
+
+.yj .yj1 .nr .txt {
+	width: 635rpx;
+	height: 280rpx;
+	font-size: 32rpx;
+	color: #bdbdbd;
+	padding: 20rpx;
+	color: #000;
+}
+
+.txt::-webkit-input-placeholder {
+	color: #999;
+	opacity: .7;
+}
+
+.yj .yj1 .nr .time {
+	width: 660rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	background: #e8e8e8;
+	font-size: 20rpx;
+	color: #bdbdbd;
+	padding-left: 20rpx;
+	overflow: hidden;
+}
+
+.yj .yj1 .nr .time .time1 {
+	float: left;
+	width: 550rpx;
+}
+
+.yj .yj1 .nr .time .nmb {
+	float: left;
+}
+
+.yj .sc {
+	margin-top: 28rpx;
+}
+
+.yj .sc p {
+	height: 75rpx;
+	line-height: 75rpx;
+	font-size: 26rpx;
+}
+
+.yj .sc p b {
+	color: #adadad;
+	font-weight: normal;
+}
+
+.yj .sc img {
+	width: 150rpx;
+	height: 152rpx;
+}
+
+.yj_btn {
+	width: 680rpx;
+	height: 90rpx;
+	background: #2a6eca;
+	margin-top: 90rpx;
+	font-size: 30rpx;
+	text-align: center;
+	line-height: 90rpx;
+	border-radius: 5rpx;
+	color: #fff;
+}
+
+/*安装手册*/
+.sc img {
+	width: 688rpx;
+	height: 1023rpx;
+	margin: 30rpx;
+}
+
+.noData {
+	text-align: center;
+	margin-top: 300rpx;
+	color: #999;
+}
+
+
+/*logout*/
+.logout {
+	color: #f85858;
+	height: 100rpx;
+	line-height: 100rpx;
+	background: #fff;
+	text-align: center;
+	font-size: 28rpx;
+	margin: 20rpx 0;
+}
+
+
+.notData {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background: none;
+	margin-top: 200rpx;
+	background: #f0f2f5;
+}
+
+.notData img {
+	margin-top: 200rpx;
+}
+
+.mint-indicator,
+.mint-indicator-enter-to {
+	position: absolute;
+	z-index: 1111;
+}
+
+.mint-indicator-wrapper,
+.mint-indicator-mask {
+	z-index: 99998 !important;
+}
+
+.flexBuju {
+	margin: 20rpx 0;
+	display: flex;
+	flex-direction: row;
+	/*：row | row-reverse | column | column-reverse*/
+	flex-wrap: wrap;
+	/*nowrap | wrap | wrap-reverse*/
+	justify-content: space-around;
+	/*flex-start | flex-end | center | space-between | space-around*/
+	align-items: center;
+	/*flex-start | flex-end | center | baseline | stretch*/
+}
