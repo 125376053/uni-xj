@@ -28,11 +28,11 @@ export default {
 			//缓存与页面拦截
 			global.user = uni.getStorageSync('user')
 			if(!global.user){
-				uni.navigateTo({
+				uni.redirectTo({
 					url:"/pages/login/login"
 				})
 			}else{
-				uni.navigateTo({
+				uni.redirectTo({
 					url:"/pages/index/index"
 				})
 			}

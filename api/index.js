@@ -23,7 +23,12 @@ export default function (obj){
 			})
 		},
 		complete(){
-			uni.hideLoading()
+			if(obj.complete){
+				obj.complete()
+				console.log(123)
+			}else{
+				uni.hideLoading()
+			}
 		}
 	});
 }

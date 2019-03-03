@@ -19,15 +19,19 @@
         <div class="rc" style="background:#f0f2f5;">
             <ul>
                 <li class="li JustifyFlex">
-                    <img class="bq" src="/static/images/my4.jpg">
-                    <span class="wt">帮助文档</span>
-                    <img class="jt" src="/static/images/myLeft.jpg">
+                    <navigator class="JustifyFlex" url="/pages/help/help">
+						<img class="bq" src="/static/images/my4.jpg">
+						<span class="wt">帮助文档</span>
+						<img class="jt" src="/static/images/myLeft.jpg">
+					</navigator>
                 </li>
 
                 <li class="li JustifyFlex">
-                    <img class="bq" src="/static/images/my5.jpg">
-                    <span class="wt">关于应用</span>
-                    <img class="jt" src="/static/images/myLeft.jpg">
+                    <navigator class="JustifyFlex" url="/pages/about/about">
+						<img class="bq" src="/static/images/my5.jpg">
+						<span class="wt">关于应用</span>
+						<img class="jt" src="/static/images/myLeft.jpg">
+					</navigator>
                 </li>
             </ul>
 

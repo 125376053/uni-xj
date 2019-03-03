@@ -9,8 +9,7 @@
 					v-for="(item, index) in MessageList"
 					@click="gotoXq(item)"
 				>
-					
-					<div class="left"><img v-if="true" :src="imgsType[item.OrderType - 1]"/></div>
+					<div class="left"><img v-if="true" :src="imgsType[item.OrderType - 1]" /></div>
 					<div class="right">
 						<p class="title ellipse">{{ item.OrderRemark }}</p>
 						<p class="dataAndText JustifyFlex">
@@ -61,17 +60,22 @@ export default {
 	},
 	onPullDownRefresh() {
 		console.log('下拉刷新只能用页面的行为');
+		uni.stopPullDownRefresh();
 		//如果还有下一页
-		if (this.pageInfo.PageCount > this.pageIndex) {
-			this.pageIndex++;
-			this.getData();
-		} else {
-			//如果没有新数据
-			uni.stopPullDownRefresh()
-		}
+		// 		if (this.pageInfo.PageCount > this.pageIndex) {
+		// 			this.pageIndex++;
+		// 			this.getData();
+		// 		} else {
+		// 			//如果没有新数据
+		// 			uni.stopPullDownRefresh()
+		// 		}
 	},
 	onReachBottom() {
 		console.log('上拉触底不能用内部滚动条');
+		if (this.pageInfo.PageCount > this.pageIndex) {
+			this.pageIndex++;
+			this.getData();
+		}
 	},
 	methods: {
 		getRelateIdFn() {
@@ -95,7 +99,13 @@ export default {
 		},
 		getData() {
 			this.request({
-				url:'/api/WorkOrder/GetItemListPage?pageindex=' +this.pageIndex +'&pagesize=' +this.pageSize +'&ticket=' +this.user.ticket,
+				url:
+					'/api/WorkOrder/GetItemListPage?pageindex=' +
+					this.pageIndex +
+					'&pagesize=' +
+					this.pageSize +
+					'&ticket=' +
+					this.user.ticket,
 				data: {},
 				method: 'get',
 				success: d => {
@@ -109,9 +119,15 @@ export default {
 						if (d.Model) {
 							this.MessageList = this.MessageList.concat(d.Model.DataList || []);
 							this.pageInfo = d.Model.PageInfo || [];
-							uni.stopPullDownRefresh()
+							//uni.stopPullDownRefresh()
 						}
 					}
+				},
+				complete() {
+					console.log('456')
+					setTimeout(function() {
+						uni.hideLoading();
+					},2000);
 				}
 			});
 		},

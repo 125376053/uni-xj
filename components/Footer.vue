@@ -54,30 +54,31 @@ export default {
 		changeIndex(index, path) {
 			this.currIndex = index;
 			this.currIndex2 = index;
+			console.log(path);
 
 			if (index == 2) {
 				//跳转路由后 点击状态消失
 				uni.navigateTo({
-					url:path+'?RelateId=""&WorkOrderId=""'
+					url: path + '?RelateId=""&WorkOrderId=""'
 				})
 			} else {
 				//跳转路由后 点击状态消失
-				uni.navigateTo({
-					url:path
-				})
+				uni.redirectTo({
+					url: path
+				});
 			}
 		}
 	},
 	mounted() {
-		let pages = getCurrentPages()
+		let pages = getCurrentPages();
 		let currPage = null;
-		let path = ''
+		let path = '';
 		if (pages.length) {
-		   currPage = pages[pages.length - 1];
-		   path = currPage.route
+			currPage = pages[pages.length - 1];
+			path = currPage.route;
 		}
-		console.log(path) 
-		
+		console.log(path);
+
 		//打开页面保存点击状态高亮
 		if (path == 'pages/index/index') {
 			this.currIndex = 0;
