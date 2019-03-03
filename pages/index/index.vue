@@ -20,8 +20,10 @@
 				</p>
 
 				<p>
-					<img src="/static/images/weihu4.png" alt="" />
-					<span>实时监测</span>
+					<navigator url="/pages/echarts/echarts" style="width: 344rpx;height: 165rpx;display: block;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;">
+						<img src="/static/images/weihu4.png" alt="" />
+						<span>实时监测</span>
+					</navigator>
 				</p>
 			</div>
 

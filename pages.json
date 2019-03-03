@@ -53,7 +53,11 @@
         {
             "path" : "pages/util/util",
             "style" : {}
-        }
+        },
+		{
+		    "path" : "pages/echarts/echarts",
+		    "style" : {}
+		}
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",
