@@ -70,7 +70,14 @@ export default {
 	},
 	mounted() {
 		let pages = getCurrentPages()
-		let path = pages[0].route
+		let currPage = null;
+		let path = ''
+		if (pages.length) {
+		   currPage = pages[pages.length - 1];
+		   path = currPage.route
+		}
+		console.log(path) 
+		
 		//打开页面保存点击状态高亮
 		if (path == 'pages/index/index') {
 			this.currIndex = 0;

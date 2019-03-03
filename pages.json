@@ -1,5 +1,11 @@
 {
     "pages" : [
+		{
+		    "path" : "pages/welcome/welcome",
+		    "style" : {
+				"navigationBarTitleText" : "欢迎光临"
+			}
+		},
         {
             "path" : "pages/index/index",
             "style" : {
@@ -8,7 +14,9 @@
         },
         {
             "path" : "pages/login/login",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText" : "登录"
+			}
         },
         {
             "path" : "pages/yunxing/yunxing",
@@ -20,7 +28,10 @@
         },
         {
             "path" : "pages/message/message",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "uni-app",
+                "enablePullDownRefresh": true
+			}
         },
         {
             "path" : "pages/selectSheshi/selectSheshi",
@@ -33,7 +44,7 @@
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",
-        "navigationBarTitleText" : "uni-app",
+        "navigationBarTitleText" : "海绵城市巡检维护",
         "navigationBarBackgroundColor" : "#F8F8F8",
         "backgroundColor" : "#F8F8F8"
     }

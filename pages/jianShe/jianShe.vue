@@ -1,39 +1,35 @@
 <template>
-	<div>
-		<HeaderNav :title="title"></HeaderNav>
-		<div class="overAuto2">
-			<div class="yunxing">
-				<div class="jianshe">
-					<div class="jianshe_bottom JustifyFlex">
-						<div class="index_text">
-							<b>{{ jianSheObj.totoalmianji }}</b>
-							<span>项目规模</span>
-						</div>
-						<div class="index_text">
-							<b>{{ jianSheObj.totoalcount }}</b>
-							<span>安装设备数量</span>
-						</div>
+	<div class="overAuto2">
+		<div class="yunxing">
+			<div class="jianshe">
+				<div class="jianshe_bottom JustifyFlex">
+					<div class="index_text">
+						<b>{{ jianSheObj.totoalmianji }}</b>
+						<span>项目规模</span>
+					</div>
+					<div class="index_text">
+						<b>{{ jianSheObj.totoalcount }}</b>
+						<span>安装设备数量</span>
 					</div>
 				</div>
-
-				<ul class="tableUl">
-					<li>
-						<span>设施/设备名称</span>
-						<span>规模/数量</span>
-					</li>
-					<li v-for="(item, index) in jianSheObj.datalist">
-						<span class="ellipse">{{ item.Name }}</span>
-						<span>{{ item.NameVal }}</span>
-					</li>
-				</ul>
 			</div>
+
+			<ul class="tableUl">
+				<li>
+					<span>设施/设备名称</span>
+					<span>规模/数量</span>
+				</li>
+				<li v-for="(item, index) in jianSheObj.datalist">
+					<span class="ellipse">{{ item.Name }}</span>
+					<span>{{ item.NameVal }}</span>
+				</li>
+			</ul>
 		</div>
 	</div>
 </template>
 
 <script>
 import { mapState, mapGetters, mapActions } from 'vuex';
-import Header from '../../components/Header.vue';
 export default {
 	name: '',
 	data() {
@@ -41,9 +37,6 @@ export default {
 			title: '建设情况',
 			jianSheObj: {}
 		};
-	},
-	components: {
-		HeaderNav: Header
 	},
 	computed: {
 		...mapGetters(['user'])
@@ -67,7 +60,6 @@ export default {
 					}
 				}
 			});
-			
 		}
 	},
 	mounted() {

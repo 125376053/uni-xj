@@ -1,7 +1,5 @@
 <template>
-	<div>
-		<HeaderNav :title="title" :isShowRe="isShowRe"></HeaderNav>
-
+	<div v-if="user">
 		<div class="indexWrap">
 			<div class="index_top">
 				<p>
@@ -77,11 +75,9 @@
 </template>
 <script>
 import { mapState, mapGetters, mapActions } from 'vuex';
-import Header from "../../components/Header.vue"
 import Footer from "../../components/Footer.vue"
 export default {
 	components: {
-		HeaderNav: Header,
 		FooterNav: Footer
 	},
 	data() {
@@ -98,9 +94,11 @@ export default {
 	computed: {
 		...mapGetters(['user'])
 	},
-	mounted() {
-		this.jianSheData();
-		this.yunXingData();
+	onLoad() {
+		if(this.user){
+			this.jianSheData();
+			this.yunXingData();
+		}
 	},
 	methods: {
 		jianSheData() {

@@ -1,48 +1,43 @@
 <template>
-	<div>
-		<HeaderNav :title="title"></HeaderNav>
-
-		<div class="overAuto2">
-			<div class="yunxing">
-				<div class="yunZhuan JustifyFlex">
-					<div class="p1">
-						<p class="number">{{ yunXingObj.Normal }}</p>
-						<p class="text">正常设备</p>
-					</div>
-					<div class="yunzhuanlv">
-						<p id="tijiaoProcess1">
-							<span>{{ normalScale }}%</span>
-						</p>
-						<p class="huanText">正常运转率</p>
-					</div>
-
-					<div class="p1">
-						<p class="number">{{ yunXingObj.Trouble }}</p>
-						<p class="text">故障设备</p>
-					</div>
+	<div class="overAuto2">
+		<div class="yunxing">
+			<div class="yunZhuan JustifyFlex">
+				<div class="p1">
+					<p class="number">{{ yunXingObj.Normal }}</p>
+					<p class="text">正常设备</p>
+				</div>
+				<div class="yunzhuanlv">
+					<p id="tijiaoProcess1">
+						<span>{{ normalScale }}%</span>
+					</p>
+					<p class="huanText">正常运转率</p>
 				</div>
 
-				<ul class="tableUl2">
-					<li>
-						<span>设备名称</span>
-						<span>运转正常数</span>
-						<span>运转故障数</span>
-					</li>
-
-					<li v-for="(item, index) in yunXingObj.DataList">
-						<span class="ellipse">{{ item.SheBeiname }}</span>
-						<span>{{ item.Normal }}</span>
-						<span>{{ item.Trouble }}</span>
-					</li>
-				</ul>
+				<div class="p1">
+					<p class="number">{{ yunXingObj.Trouble }}</p>
+					<p class="text">故障设备</p>
+				</div>
 			</div>
+
+			<ul class="tableUl2">
+				<li>
+					<span>设备名称</span>
+					<span>运转正常数</span>
+					<span>运转故障数</span>
+				</li>
+
+				<li v-for="(item, index) in yunXingObj.DataList">
+					<span class="ellipse">{{ item.SheBeiname }}</span>
+					<span>{{ item.Normal }}</span>
+					<span>{{ item.Trouble }}</span>
+				</li>
+			</ul>
 		</div>
 	</div>
 </template>
 
 <script>
 import { mapState, mapGetters, mapActions } from 'vuex';
-import Header from '../../components/Header.vue';
 export default {
 	name: '',
 	data() {
@@ -51,9 +46,6 @@ export default {
 			yunXingObj: {},
 			normalScale: 0
 		};
-	},
-	components: {
-		HeaderNav: Header
 	},
 	mounted() {
 		this.getData();

@@ -14,14 +14,6 @@ Vue.prototype.$store = store;
 import request from "./api/index.js"
 Vue.prototype.request = request
 
-//缓存与页面拦截
-global.user = uni.getStorageSync('user')
-if(!global.user){
-	uni.navigateTo({
-		url:"/pages/login/login"
-	})
-}
-
 const app = new Vue({
     ...App
 })

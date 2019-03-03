@@ -238,7 +238,7 @@
 /*首页*/
 .indexWrap {
 	position: absolute;
-	top: 89rpx;
+	top: 0rpx;
 	bottom: 106rpx;
 	left: 0;
 	right: 0;
@@ -820,7 +820,7 @@ dataAndText i {
 
 .overAuto {
 	position: absolute;
-	top: 89rpx;
+	top: 0rpx;
 	bottom: 120rpx;
 	overflow: auto;
 	width: 100%;
@@ -828,7 +828,7 @@ dataAndText i {
 
 .overAuto2 {
 	position: absolute;
-	top: 89rpx;
+	top: 0rpx;
 	bottom: 0;
 	overflow: auto;
 	width: 100%;
