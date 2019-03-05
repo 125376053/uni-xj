@@ -3,20 +3,26 @@
 		<div class="indexWrap">
 			<div class="index_top">
 				<p>
-					<img src="/static/images/weihu1.png" alt="" />
-					<span>建设情况</span>
+					<navigator url="/pages/device/device" style="width: 344rpx;height: 165rpx;display: block;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;">
+						<img src="/static/images/weihu1.png" alt="" />
+						<span>本地能力</span>
+					</navigator>
 				</p>
 
 				<p>
-					<img src="/static/images/weihu2.png" alt="" />
-					<span>运行情况</span>
+					<navigator url="/pages/camera/camera" style="width: 344rpx;height: 165rpx;display: block;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;">
+						<img src="/static/images/weihu2.png" alt="" />
+						<span>拍照录像</span>
+					</navigator>
 				</p>
 
 				<!-- :to="{ path: '/renwuManage?step=1' }" -->
 				<p class="xiaoxiListWrap">
-					<img src="/static/images/weihu3.png" alt="" />
-					<span>待办任务</span>
-					<i class="xiaoxiList1">{{ renwuNum }}</i>
+					<navigator url="/pages/zhibo/zhibo" style="width: 344rpx;height: 165rpx;display: block;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;">
+						<img src="/static/images/weihu3.png" alt="" />
+						<span>文件操作</span>
+						<i class="xiaoxiList1">{{ renwuNum }}</i>
+					</navigator>
 				</p>
 
 				<p>

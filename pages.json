@@ -54,10 +54,26 @@
             "path" : "pages/util/util",
             "style" : {}
         },
-		{
-		    "path" : "pages/echarts/echarts",
-		    "style" : {}
-		}
+        {
+            "path" : "pages/echarts/echarts",
+            "style" : {}
+        },
+        {
+            "path" : "pages/android/android",
+            "style" : {}
+        },
+        {
+            "path" : "pages/device/device",
+            "style" : {}
+        },
+        {
+            "path" : "pages/camera/camera",
+            "style" : {}
+        },
+        {
+            "path" : "pages/zhibo/zhibo",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",
